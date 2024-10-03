@@ -14,6 +14,9 @@ const urlModule = require("url");
     fs.mkdirSync(outputsDir);
   }
 
+  // Initialize an array to hold all data
+  let allData = [];
+
   for (const item of inputData.fetch_data_from) {
     const { name, link } = item;
     try {
@@ -74,21 +77,23 @@ const urlModule = require("url");
                 // Modify the link according to the rules
                 const modifiedLink = modifyLink(href);
 
+                let nestedData = null;
                 if (modifiedLink) {
                   console.log(
                     `Fetching data for ${linkText} from ${modifiedLink}`
                   );
                   // Fetch the modified link and extract table data
                   try {
-                    const nestedData = await fetchNestedTableData(modifiedLink);
-                    // Save the nested data under 'portfolio_holdings' key
-                    rowData["portfolio_holdings"] = nestedData;
+                    nestedData = await fetchNestedTableData(modifiedLink);
                   } catch (error) {
                     console.error(
                       `Error fetching nested data for ${linkText}: ${error.message}`
                     );
                   }
                 }
+
+                // Save the nested data under 'portfolio_holdings' key
+                rowData["portfolio_holdings"] = nestedData;
 
                 // Store the link and text (use linkText)
                 let cellText = cleanText(linkText); // Use linkText instead of cell text
@@ -108,8 +113,10 @@ const urlModule = require("url");
               }
             }
 
-            if (!skipRow) {
+            // Skip row if 'portfolio_holdings' is null
+            if (!skipRow && rowData["portfolio_holdings"] !== null) {
               tableData.push(rowData);
+              allData.push(rowData); // Add to allData
             }
           }
         }
@@ -130,6 +137,11 @@ const urlModule = require("url");
       console.error(`Error processing "${name}" from ${link}:`, error.message);
     }
   }
+
+  // Write allData to all_mutual_funds.json in the outputs directory
+  const allDataFilePath = path.join(outputsDir, `all_mutual_funds.json`);
+  fs.writeFileSync(allDataFilePath, JSON.stringify(allData, null, 2), "utf8");
+  console.log(`All mutual funds data saved to ${allDataFilePath}`);
 
   console.log(
     "Data extraction complete. Check the outputs folder for results."
