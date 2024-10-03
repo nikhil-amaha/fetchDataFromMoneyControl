@@ -1,0 +1,52 @@
+{
+  "fetch_data_from": [
+    {
+      "name": "multi_cap",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/multi-cap-fund.html"
+    },
+    {
+      "name": "small_cap",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/small-cap-fund.html"
+    },
+    {
+      "name": "contra",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/contra-fund.html"
+    },
+    {
+      "name": "large_cap",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/large-cap-fund.html"
+    },
+    {
+      "name": "elss",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/elss.html"
+    },
+    {
+      "name": "focused",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/focused-fund.html"
+    },
+    {
+      "name": "large_and_mid_cap",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/large-and-mid-cap-fund.html"
+    },
+    {
+      "name": "dividend_yield",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/dividend-yield-fund.html"
+    },
+    {
+      "name": "value",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/value-fund.html"
+    },
+    {
+      "name": "mid_cap",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/mid-cap-fund.html"
+    },
+    {
+      "name": "sectoral_thematic",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/sectoralthematic.html"
+    },
+    {
+      "name": "flexi_cap",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/flexi-cap-fund.html"
+    }
+  ]
+}
