@@ -1,0 +1,8 @@
+{
+  "sanitizeData": [
+    {
+      "fileLocation1": "./all_mf_scheme.json",
+      "fileLocation2": "./outputs/all_mutual_funds.json"
+    }
+  ]
+}
