@@ -101,7 +101,14 @@ const urlModule = require("url");
                   headers.length > 0 && headers[k]
                     ? headers[k]
                     : `column${k + 1}`;
-                rowData[key] = { text: cellText, link: href };
+
+                if (key === "scheme_name") {
+                  // For 'scheme_name', only store the text without the link
+                  rowData[key] = cellText;
+                } else {
+                  // For other keys, include both text and link
+                  rowData[key] = { text: cellText, link: href };
+                }
               } else {
                 // No <a> tag, just store the text
                 let cellText = cleanText($(cell).text());
@@ -121,7 +128,10 @@ const urlModule = require("url");
           }
         }
 
-        tableDataArray.push(tableData);
+        if (tableData.length > 0) {
+          // Only add non-empty tableData arrays
+          tableDataArray.push(tableData);
+        }
       }
 
       // Save the output data to a JSON file in the outputs directory

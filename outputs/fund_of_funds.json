@@ -1,0 +1,70 @@
+[
+  [
+    {
+      "portfolio_holdings": [
+        {
+          "stock_invested_in": "Bluebox Precision Medicine Fund",
+          "sector": "Foreign equity",
+          "sector_total": "2.47",
+          "value_mn": "220.5",
+          "percentage_of_total_holdings": "2.47%",
+          "1m_change": "0.00%",
+          "1y_highest_holding": "2.15% (Jul 2024)",
+          "1y_lowest_holding": "0% (Sep 2023)",
+          "quantity": "0.02 L",
+          "1m_change_in_qty": "0.00 L",
+          "mcap": "Other",
+          "groupname": "2.47"
+        }
+      ],
+      "scheme_name": "DSP Global Innovation Fund of Fund - Direct Plan - Growth",
+      "plan": "Direct Plan",
+      "category_name": "Fund of Funds",
+      "crisil_rank": "",
+      "aum_cr": "892.26",
+      "week_one": "0.70%",
+      "month_one": "11.03%",
+      "month_three": "1.20%",
+      "month_six": "11.56%",
+      "ytd": "21.58%",
+      "year_one": "36.76%",
+      "year_two": "38.74%",
+      "year_three": "",
+      "year_five": "",
+      "year_ten": ""
+    },
+    {
+      "portfolio_holdings": [
+        {
+          "stock_invested_in": "Bluebox Precision Medicine Fund",
+          "sector": "Foreign equity",
+          "sector_total": "2.47",
+          "value_mn": "220.5",
+          "percentage_of_total_holdings": "2.47%",
+          "1m_change": "0.00%",
+          "1y_highest_holding": "2.15% (Jul 2024)",
+          "1y_lowest_holding": "0% (Sep 2023)",
+          "quantity": "0.02 L",
+          "1m_change_in_qty": "0.00 L",
+          "mcap": "Other",
+          "groupname": "2.47"
+        }
+      ],
+      "scheme_name": "DSP Global Innovation Fund of Fund - Regular Plan - Growth",
+      "plan": "Regular",
+      "category_name": "Fund of Funds",
+      "crisil_rank": "",
+      "aum_cr": "892.26",
+      "week_one": "0.68%",
+      "month_one": "10.95%",
+      "month_three": "0.98%",
+      "month_six": "11.08%",
+      "ytd": "20.73%",
+      "year_one": "35.53%",
+      "year_two": "37.44%",
+      "year_three": "",
+      "year_five": "",
+      "year_ten": ""
+    }
+  ]
+]

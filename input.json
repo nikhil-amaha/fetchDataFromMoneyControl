@@ -1,6 +1,10 @@
 {
   "fetch_data_from": [
     {
+      "name": "index",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/index-fundsetfs.html"
+    },
+    {
       "name": "multi_cap",
       "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/multi-cap-fund.html"
     },
@@ -47,6 +51,34 @@
     {
       "name": "flexi_cap",
       "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/flexi-cap-fund.html"
+    },
+    {
+      "name": "aggressive_hybrid",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/aggressive-hybrid-fund.html"
+    },
+    {
+      "name": "conservative_hybrid",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/conservative-hybrid-fund.html"
+    },
+    {
+      "name": "arbitrage",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/arbitrage-fund.html"
+    },
+    {
+      "name": "equity_savings",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/equity-savings.html"
+    },
+    {
+      "name": "dynamic_asset_allocation",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/dynamic-asset-allocation-or-balanced-advantage.html"
+    },
+    {
+      "name": "multi_asset_allocation",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/multi-asset-allocation.html"
+    },
+    {
+      "name": "fund_of_funds",
+      "link": "https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/fund-of-funds.html"
     }
   ]
 }

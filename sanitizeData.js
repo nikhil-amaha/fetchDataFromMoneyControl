@@ -51,13 +51,13 @@ function normalizeSchemeName(name) {
   const stopWords = ["option", "plan", "regular", "direct"];
 
   return name
-    .toLowerCase()
-    .replace(/-/g, " ") // Replace hyphens with spaces
-    .replace(/[^\w\s]/g, "") // Remove punctuation
-    .split(/\s+/) // Split into words
-    .filter((word) => !stopWords.includes(word)) // Remove stop words
-    .join(" ") // Rejoin into string
-    .trim();
+    ?.toLowerCase()
+    ?.replace(/-/g, " ") // Replace hyphens with spaces
+    ?.replace(/[^\w\s]/g, "") // Remove punctuation
+    ?.split(/\s+/) // Split into words
+    ?.filter((word) => !stopWords.includes(word)) // Remove stop words
+    ?.join(" ") // Rejoin into string
+    ?.trim();
 }
 
 // Function to compute similarity between two scheme names
@@ -105,7 +105,7 @@ const allData = [];
 
 // Process each item in file 2
 for (const item2 of file2Data) {
-  const schemeNameText = item2.scheme_name.text;
+  const schemeNameText = item2.scheme_name;
   const normalizedSchemeNameText = normalizeSchemeName(schemeNameText);
 
   let matched = false; // Flag to check if the item was matched
